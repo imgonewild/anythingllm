@@ -1,0 +1,272 @@
+[33mWARNING[0m:  [10-12-2024 14:52:06] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [10-12-2024 14:52:06] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component System
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component SqliteDB
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component Posthog
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [10-12-2024 14:52:06] Starting component SegmentAPI
+[32mINFO[0m:     [10-12-2024 14:52:06] Started server process [[36m1536[0m]
+[32mINFO[0m:     [10-12-2024 14:52:06] Waiting for application startup.
+[32mINFO[0m:     [10-12-2024 14:52:06] Application startup complete.
+[32mINFO[0m:     [10-12-2024 14:52:06] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [10-12-2024 14:52:14] ::1:53874 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 14:52:15] ::1:53874 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 15:18:14] Shutting down
+[32mINFO[0m:     [10-12-2024 15:18:14] Waiting for application shutdown.
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component System
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component SegmentAPI
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component Posthog
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component SqliteDB
+[36mDEBUG[0m:    [10-12-2024 15:18:14] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [10-12-2024 15:18:14] Application shutdown complete.
+[32mINFO[0m:     [10-12-2024 15:18:14] Finished server process [[36m1536[0m]
+[33mWARNING[0m:  [10-12-2024 15:18:24] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [10-12-2024 15:18:24] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component System
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component SqliteDB
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component Posthog
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [10-12-2024 15:18:24] Starting component SegmentAPI
+[32mINFO[0m:     [10-12-2024 15:18:24] Started server process [[36m23952[0m]
+[32mINFO[0m:     [10-12-2024 15:18:24] Waiting for application startup.
+[32mINFO[0m:     [10-12-2024 15:18:24] Application startup complete.
+[32mINFO[0m:     [10-12-2024 15:18:24] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [10-12-2024 15:18:44] ::1:54295 - "GET /api/v2/heartbeat HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 15:19:02] ::1:54298 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 15:19:34] ::1:54300 - "GET /api/v2/heartbeat HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 15:25:52] ::1:54326 - "GET /api/v2/heartbeat HTTP/1.1" 404
+[32mINFO[0m:     [10-12-2024 16:10:34] Shutting down
+[32mINFO[0m:     [10-12-2024 16:10:34] Waiting for application shutdown.
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component System
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component SegmentAPI
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component Posthog
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component SqliteDB
+[36mDEBUG[0m:    [10-12-2024 16:10:34] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [10-12-2024 16:10:34] Application shutdown complete.
+[32mINFO[0m:     [10-12-2024 16:10:34] Finished server process [[36m23952[0m]
+[33mWARNING[0m:  [12-12-2024 15:37:25] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [12-12-2024 15:37:25] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component System
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component SqliteDB
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component Posthog
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [12-12-2024 15:37:25] Starting component SegmentAPI
+[32mINFO[0m:     [12-12-2024 15:37:25] Started server process [[36m28380[0m]
+[32mINFO[0m:     [12-12-2024 15:37:25] Waiting for application startup.
+[32mINFO[0m:     [12-12-2024 15:37:25] Application startup complete.
+[32mINFO[0m:     [12-12-2024 15:37:25] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [12-12-2024 15:37:29] ::1:53843 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [12-12-2024 15:37:29] ::1:53843 - "GET /favicon.ico HTTP/1.1" 404
+[33mWARNING[0m:  [18-12-2024 17:27:30] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [18-12-2024 17:27:30] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component System
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component SqliteDB
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component Posthog
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [18-12-2024 17:27:30] Starting component SegmentAPI
+[32mINFO[0m:     [18-12-2024 17:27:30] Started server process [[36m29612[0m]
+[32mINFO[0m:     [18-12-2024 17:27:30] Waiting for application startup.
+[32mINFO[0m:     [18-12-2024 17:27:30] Application startup complete.
+[32mINFO[0m:     [18-12-2024 17:27:30] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [18-12-2024 17:27:55] ::1:53799 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [18-12-2024 17:27:55] Collection lancedb does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection lancedb does not exist.
+[32mINFO[0m:     [18-12-2024 17:27:55] ::1:53800 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [18-12-2024 17:28:01] ::1:53812 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [18-12-2024 17:28:01] Collection lancedb does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection lancedb does not exist.
+[32mINFO[0m:     [18-12-2024 17:28:01] ::1:53813 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [18-12-2024 17:28:06] ::1:53816 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:06] ::1:53817 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [18-12-2024 17:28:06] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-12-2024 17:28:06] ::1:53816 - "POST /api/v1/collections/af0d6896-180b-4da3-8a61-086d20b49378/add HTTP/1.1" 201
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53847 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53848 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53847 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53848 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53847 - "GET /api/v1/collections/af0d6896-180b-4da3-8a61-086d20b49378/count HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53847 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:20] ::1:53848 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-12-2024 17:28:21] ::1:53847 - "GET /api/v1/collections/lancedb?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [18-12-2024 17:28:21] Number of requested results 4 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [18-12-2024 17:28:21] ::1:53848 - "POST /api/v1/collections/af0d6896-180b-4da3-8a61-086d20b49378/query HTTP/1.1" 200

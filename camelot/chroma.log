@@ -1,0 +1,801 @@
+[33mWARNING[0m:  [16-12-2024 15:12:58] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [16-12-2024 15:12:59] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component System
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:12:59] Starting component SegmentAPI
+[32mINFO[0m:     [16-12-2024 15:12:59] Started server process [[36m3484[0m]
+[32mINFO[0m:     [16-12-2024 15:12:59] Waiting for application startup.
+[32mINFO[0m:     [16-12-2024 15:12:59] Application startup complete.
+[32mINFO[0m:     [16-12-2024 15:12:59] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-12-2024 15:13:23] ::1:53731 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [16-12-2024 15:13:23] ::1:53731 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [16-12-2024 15:19:35] ::1:53829 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:19:35] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:19:35] ::1:53830 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:19:51] ::1:53847 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:19:51] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:19:51] ::1:53848 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:19:51] ::1:53847 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:19:51] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:19:51] ::1:53848 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:27:51] ::1:54201 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:27:51] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:27:51] ::1:54202 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:27:53] ::1:54201 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:27:53] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:27:53] ::1:54202 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:32:28] Shutting down
+[32mINFO[0m:     [16-12-2024 15:32:28] Finished server process [[36m3484[0m]
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component System
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component SegmentAPI
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:32:28] Stopping component OpenTelemetryClient
+[31mERROR[0m:    [16-12-2024 15:32:28] Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\middleware\message_logger.py", line 62, in inner_receive
+    message = await receive()
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\lifespan\on.py", line 139, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[33mWARNING[0m:  [16-12-2024 15:32:37] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [16-12-2024 15:32:37] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component System
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:32:37] Starting component SegmentAPI
+[32mINFO[0m:     [16-12-2024 15:32:37] Started server process [[36m22284[0m]
+[32mINFO[0m:     [16-12-2024 15:32:37] Waiting for application startup.
+[32mINFO[0m:     [16-12-2024 15:32:37] Application startup complete.
+[32mINFO[0m:     [16-12-2024 15:32:37] Uvicorn running on [1mhttp://localhost:8888[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-12-2024 15:32:56] 127.0.0.1:54290 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [16-12-2024 15:33:14] ::1:54303 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:33:14] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:33:14] ::1:54304 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:33:14] ::1:54303 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:33:14] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:33:14] ::1:54304 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:33:51] Shutting down
+[32mINFO[0m:     [16-12-2024 15:33:51] Waiting for application shutdown.
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component System
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component SegmentAPI
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:33:51] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [16-12-2024 15:33:51] Application shutdown complete.
+[32mINFO[0m:     [16-12-2024 15:33:51] Finished server process [[36m22284[0m]
+[33mWARNING[0m:  [16-12-2024 15:34:09] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [16-12-2024 15:34:10] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component System
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:34:10] Starting component SegmentAPI
+[32mINFO[0m:     [16-12-2024 15:34:10] Started server process [[36m19156[0m]
+[32mINFO[0m:     [16-12-2024 15:34:10] Waiting for application startup.
+[32mINFO[0m:     [16-12-2024 15:34:10] Application startup complete.
+[32mINFO[0m:     [16-12-2024 15:34:10] Uvicorn running on [1mhttp://localhost:8889[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-12-2024 15:52:04] ::1:55607 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[31mERROR[0m:    [16-12-2024 15:52:04] Collection chroma does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 78, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 92, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 130, in wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 662, in get_collection
+    await to_thread.run_sync(
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 143, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\chromadb\api\segment.py", line 270, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection chroma does not exist.
+[32mINFO[0m:     [16-12-2024 15:52:04] ::1:55608 - "GET /api/v1/collections/chroma?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [16-12-2024 15:56:44] Shutting down
+[32mINFO[0m:     [16-12-2024 15:56:44] Finished server process [[36m19156[0m]
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component System
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component SegmentAPI
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component Posthog
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component SqliteDB
+[36mDEBUG[0m:    [16-12-2024 15:56:44] Stopping component OpenTelemetryClient
+[31mERROR[0m:    [16-12-2024 15:56:44] Traceback (most recent call last):
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\middleware\message_logger.py", line 62, in inner_receive
+    message = await receive()
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\site-packages\uvicorn\lifespan\on.py", line 139, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alan Yu\AppData\Local\Programs\Python\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+

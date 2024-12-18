@@ -118,10 +118,18 @@ export default function GeneralVectorDatabase() {
       name: "Chroma",
       value: "chroma",
       logo: ChromaLogo,
-      options: <ChromaDBOptions settings={settings} />,
+      options: <ChromaDBOptions />,
       description:
-        "Open source vector database you can host yourself or on the cloud.",
+        "100% local vector DB that runs on the same instance as AnythingLLM.",
     },
+    // {
+    //   name: "Chroma",
+    //   value: "chroma",
+    //   logo: ChromaLogo,
+    //   options: <ChromaDBOptions settings={settings} />,
+    //   description:
+    //     "Open source vector database you can host yourself or on the cloud.",
+    // },
     {
       name: "Pinecone",
       value: "pinecone",
