@@ -12,9 +12,17 @@ const { sourceIdentifier } = require("../../chats");
  */
 
 const LanceDb = {
-  uri: `${
-    !!process.env.STORAGE_DIR ? `${process.env.STORAGE_DIR}/` : "./storage/"
-  }lancedb`,
+  // uri: `${!!process.env.STORAGE_DIR ? `${process.env.STORAGE_DIR}/` : "./storage/"
+  //   }lancedb`,
+
+  uri: (() => {
+    const uri = !!process.env.STORAGE_DIR
+      ? `${process.env.STORAGE_DIR}/`
+      : "./storage/";
+    console.log(`LanceDb URI: ${uri}lancedb`);
+    return `${uri}lancedb`;
+  })(),
+
   name: "LanceDb",
 
   /** @returns {Promise<{client: LanceClient}>} */
